@@ -51,12 +51,20 @@ header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
     color: whitesmoke;
 }
 
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: blueviolet;
+}
+
 header a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
+}
+
+header a:hover{
+    color: blueviolet;
 }
 
 header a h1 {
@@ -122,6 +130,12 @@ main .banner a {
     font-family: 'Poppins', sans-serif;
     border: 3px solid blueviolet;
     padding: 8px;
+}
+
+main .banner a:hover {
+    color: blueviolet;
+    background-color: whitesmoke;
+    border: 3px solid blueviolet;
 }
 
 main .info {
