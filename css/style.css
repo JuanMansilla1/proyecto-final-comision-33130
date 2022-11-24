@@ -17,6 +17,7 @@
 }
 
 /*!-----------------HEADER----------------*/
+
 header {
     background: rgb(0, 0, 0);
     width: 100%;
@@ -38,6 +39,11 @@ header a {
     color: white;
     font-size: 20px;
     font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header a h1 {
+    margin: 0;
 }
 
 header span {
@@ -46,12 +52,20 @@ header span {
 
 header nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
     display: inline-block;
     padding: 10px;
     margin: 5px 15px 5px 15px;
+}
+
+header nav ul li a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
 }
 
 /*!--------------------MAIN--------------------*/
@@ -73,13 +87,14 @@ main .banner h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     padding-top: 110px;
+    margin: 0;
 }
 
 main .banner h3 {
     color: blueviolet;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-bottom: 90px;
 }
 
@@ -118,11 +133,13 @@ main .info h2 {
 
 main .info p {
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 main .info .info-a {
-    width: 250px;
-    padding: 40px;
+    width: 270px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,8 +148,8 @@ main .info .info-a {
 }
 
 main .info .info-b {
-    width: 250px;
-    padding: 40px;
+    width: 270px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,8 +158,8 @@ main .info .info-b {
 }
 
 main .info .info-c {
-    width: 250px;
-    padding: 40px;
+    width: 270px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,15 +194,21 @@ main .planes h2 {
     margin-bottom: 30px;
 }
 
+main .planes ul{
+    margin: 0;
+    padding: 0;
+}
+
 main .planes ul li {
     list-style: circle inside;
     font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
     width: 220px;
 }
 
 main .planes .plan-a {
     width: 300px;
-    height: 600px;
+    height: 630px;
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -200,7 +223,7 @@ main .planes .plan-a {
 
 main .planes .plan-b {
     width: 300px;
-    height: 600px;
+    height: 630px;
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -215,7 +238,7 @@ main .planes .plan-b {
 
 main .planes .plan-c {
     width: 300px;
-    height: 600px;
+    height: 630px;
     margin: 40px;
     display: flex;
     flex-direction: column;
@@ -269,6 +292,8 @@ main .img-galery h2 {
     right: 0%;
     top: 0%;
     font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 main .img-galery .galery-a {
@@ -286,6 +311,7 @@ main .img-galery .galery-a p {
     text-align: justify;
     width: 78%;
     background-color: rgba(0, 0, 0, 0.658);
+    margin: 0;
 }
 
 main .img-galery .galery-b {
@@ -303,6 +329,7 @@ main .img-galery .galery-b p {
     text-align: justify;
     width: 78%;
     background-color: rgba(0, 0, 0, 0.658);
+    margin: 0;
 }
 
 main .img-galery .galery-c {
@@ -320,6 +347,7 @@ main .img-galery .galery-c p {
     text-align: justify;
     width: 70%;
     background-color: rgba(0, 0, 0, 0.658);
+    margin: 0;
 }
 
 /*!------------------FOOTER------------------*/
@@ -339,6 +367,7 @@ footer div {
 
 footer .footer-left {
     width: 300px;
+    margin: 0;
 }
 
 footer .footer-left a {
@@ -346,13 +375,14 @@ footer .footer-left a {
     color: white;
     font-size: 15px;
     font-style: italic;
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer .footer-left p {
     color: rgb(148, 146, 146);
     font-size: 15px;
-    margin-top: 18px;
+    margin: 15px 0 15px 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 footer .footer-left span {
@@ -369,6 +399,13 @@ footer .footer-left .footer-social-media h2 {
     color: rgb(209, 209, 209);
     font-style: italic;
     font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+footer .footer-left .footer-social-media ul {
+    margin: 0;
+    padding: 0;
 }
 
 footer .footer-left .footer-social-media ul li {
@@ -388,21 +425,28 @@ footer .footer-right h2 {
     color: rgb(209, 209, 209);
     font-style: italic;
     font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 footer .footer-right h3 {
     color: rgb(148, 146, 146);
     font-size: 15px;
     margin-top: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 footer .footer-right p {
     color: rgb(148, 146, 146);
     font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 footer .footer-right .footer-right-a {
     margin-bottom: 18px;
+    margin-top: 10px;
 }
 
 /**-------------------Page Contacto------------------*/
@@ -532,7 +576,7 @@ footer .footer-right .footer-right-a {
     margin: 20px;
 }
 
-/**----------------Page Asesorias----------------*/
+/**----------------Page Planes----------------*/
 
 main .planes-asesorias {
     display: flex;
@@ -561,15 +605,21 @@ main .planes-asesorias h2 {
     margin-bottom: 30px;
 }
 
+main .planes-asesorias ul{
+    margin: 0;
+    padding: 0;
+}
+
 main .planes-asesorias ul li {
     list-style: circle inside;
     font-size: 18px;
     width: 220px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 main .planes-asesorias a {
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: blueviolet;
@@ -581,7 +631,7 @@ main .planes-asesorias a {
 
 main .planes-asesorias .plan-tarjeta {
     width: 300px;
-    height: 670px;
+    height: 685px;
     margin: 60px;
     display: flex;
     flex-direction: column;
@@ -837,7 +887,7 @@ main .planes-asesorias .plan-tarjeta {
         text-align: center;
     }
 
-    .footer-left {
+    footer .footer-left {
         margin-bottom: 40px;
     }
 
