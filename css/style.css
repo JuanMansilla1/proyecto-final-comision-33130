@@ -299,6 +299,13 @@ main .planes-boton .boton a {
     font-weight: 800;
     border: 2px solid blueviolet;
     padding: 5px;
+    transition: 0.3s;
+}
+
+main .planes-boton .boton a:hover{
+    color: whitesmoke;
+    background-color: blueviolet;
+    font-size: 30px;
 }
 
 main .img-galery {
@@ -934,6 +941,7 @@ main .planes-asesorias .plan-tarjeta {
     }
 
     .banner-contacto h3 {
+        padding-bottom: 85px;
         font-size: 20px;
     }
 
