@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
-    margin: 0; 
-    padding: 0; 
-} 
+* {
+    margin: 0;
+    padding: 0;
+}
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 105px auto 300px;
-    grid-template-areas:  
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
 }
 
 /*!-----------------HEADER----------------*/
-header{
+header {
     background: rgb(0, 0, 0);
     width: 100%;
     padding: 25px;
@@ -30,35 +30,36 @@ header{
     align-items: center;
     flex-wrap: wrap;
     grid-area: header;
+    z-index: 10;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-style: italic;
 }
 
-header span{
+header span {
     color: blueviolet;
 }
 
-header nav ul{
+header nav ul {
     list-style: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 10px;
-    margin: 5px 15px 5px 15px; 
+    margin: 5px 15px 5px 15px;
 }
 
 /*!--------------------MAIN--------------------*/
-main{
+main {
     grid-area: main;
 }
 
-main .banner{
+main .banner {
     text-align: center;
     background-image: url(../img/banner-index.jpg);
     background-position: center;
@@ -67,14 +68,14 @@ main .banner{
     background-repeat: no-repeat;
 }
 
-main .banner h2{
+main .banner h2 {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     padding-top: 110px;
 }
 
-main .banner h3{
+main .banner h3 {
     color: blueviolet;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
@@ -82,7 +83,7 @@ main .banner h3{
     margin-bottom: 90px;
 }
 
-main .banner a{
+main .banner a {
     color: whitesmoke;
     text-decoration: none;
     font-size: 28px;
@@ -91,7 +92,7 @@ main .banner a{
     padding: 8px;
 }
 
-main .info{
+main .info {
     display: flex;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.897);
@@ -104,22 +105,22 @@ main .info{
     padding: 40px;
 }
 
-main .info img{
+main .info img {
     width: 100px;
 }
 
-main .info h2{
+main .info h2 {
     margin: 15px 0 10px 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     text-shadow: 5px 5px 10px blueviolet;
 }
 
-main .info p{
+main .info p {
     font-size: 20px;
 }
 
-main .info .info-a{
+main .info .info-a {
     width: 250px;
     padding: 40px;
     display: flex;
@@ -129,7 +130,7 @@ main .info .info-a{
     text-align: center;
 }
 
-main .info .info-b{
+main .info .info-b {
     width: 250px;
     padding: 40px;
     display: flex;
@@ -139,7 +140,7 @@ main .info .info-b{
     text-align: center;
 }
 
-main .info .info-c{
+main .info .info-c {
     width: 250px;
     padding: 40px;
     display: flex;
@@ -149,24 +150,24 @@ main .info .info-c{
     text-align: center;
 }
 
-main .planes{
+main .planes {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color:white;
+    background-color: white;
     justify-content: space-evenly;
     box-sizing: border-box;
     padding: 80px 0px 70px 0px;
 }
 
-main .planes img{
+main .planes img {
     width: 300px;
     height: 300px;
     border: 2px solid blueviolet;
     object-fit: cover;
 }
 
-main .planes h2{
+main .planes h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: blueviolet;
@@ -176,13 +177,13 @@ main .planes h2{
     margin-bottom: 30px;
 }
 
-main .planes ul li{
+main .planes ul li {
     list-style: circle inside;
     font-size: 18px;
     width: 220px;
 }
 
-main .planes .plan-a{
+main .planes .plan-a {
     width: 300px;
     height: 600px;
     margin: 40px;
@@ -192,12 +193,12 @@ main .planes .plan-a{
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
-    box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
-    -webkit-box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
-    -moz-box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
+    box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
+    -webkit-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
+    -moz-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
 }
 
-main .planes .plan-b{
+main .planes .plan-b {
     width: 300px;
     height: 600px;
     margin: 40px;
@@ -207,12 +208,12 @@ main .planes .plan-b{
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
-    box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
-    -webkit-box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
-    -moz-box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
+    box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
+    -webkit-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
+    -moz-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
 }
 
-main .planes .plan-c{
+main .planes .plan-c {
     width: 300px;
     height: 600px;
     margin: 40px;
@@ -222,12 +223,12 @@ main .planes .plan-c{
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
-    box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
-    -webkit-box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
-    -moz-box-shadow: -3px 23px 56px -13px rgba(138,43,226,0.79);
+    box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
+    -webkit-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
+    -moz-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79);
 }
 
-main .planes-boton{
+main .planes-boton {
     background-color: white;
     width: 100%;
     height: 130px;
@@ -235,7 +236,7 @@ main .planes-boton{
     justify-content: center;
 }
 
-main .planes-boton .boton a{
+main .planes-boton .boton a {
     color: blueviolet;
     text-decoration: none;
     font-weight: bold;
@@ -246,7 +247,7 @@ main .planes-boton .boton a{
     padding: 5px;
 }
 
-main .img-galery{
+main .img-galery {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -254,13 +255,13 @@ main .img-galery{
     grid-template-areas: "galery-a galery-b galery-c";
 }
 
-main .img-galery img{
+main .img-galery img {
     width: 100%;
     height: 60vh;
     object-fit: cover;
 }
 
-main .img-galery h2{
+main .img-galery h2 {
     color: whitesmoke;
     background-color: blueviolet;
     padding: 5px 10px 5px 10px;
@@ -270,7 +271,7 @@ main .img-galery h2{
     font-style: italic;
 }
 
-main .img-galery .galery-a{
+main .img-galery .galery-a {
     grid-area: galery-a;
     position: relative;
     display: flex;
@@ -278,7 +279,7 @@ main .img-galery .galery-a{
     align-items: center;
 }
 
-main .img-galery .galery-a p{
+main .img-galery .galery-a p {
     color: whitesmoke;
     position: absolute;
     font-size: 18px;
@@ -287,7 +288,7 @@ main .img-galery .galery-a p{
     background-color: rgba(0, 0, 0, 0.658);
 }
 
-main .img-galery .galery-b{
+main .img-galery .galery-b {
     grid-area: galery-b;
     position: relative;
     display: flex;
@@ -295,7 +296,7 @@ main .img-galery .galery-b{
     align-items: center;
 }
 
-main .img-galery .galery-b p{
+main .img-galery .galery-b p {
     color: whitesmoke;
     position: absolute;
     font-size: 18px;
@@ -304,7 +305,7 @@ main .img-galery .galery-b p{
     background-color: rgba(0, 0, 0, 0.658);
 }
 
-main .img-galery .galery-c{
+main .img-galery .galery-c {
     grid-area: galery-c;
     position: relative;
     display: flex;
@@ -312,7 +313,7 @@ main .img-galery .galery-c{
     align-items: center;
 }
 
-main .img-galery .galery-c p{
+main .img-galery .galery-c p {
     color: whitesmoke;
     position: absolute;
     font-size: 18px;
@@ -322,7 +323,7 @@ main .img-galery .galery-c p{
 }
 
 /*!------------------FOOTER------------------*/
-footer{
+footer {
     background-color: rgba(0, 0, 0, 0.87);
     width: 100%;
     display: flex;
@@ -332,15 +333,15 @@ footer{
     grid-area: footer;
 }
 
-footer div{
+footer div {
     color: rgb(255, 255, 255);
 }
 
-footer .footer-left{
+footer .footer-left {
     width: 300px;
 }
 
-footer .footer-left a{
+footer .footer-left a {
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -348,65 +349,65 @@ footer .footer-left a{
 
 }
 
-footer .footer-left p{
+footer .footer-left p {
     color: rgb(148, 146, 146);
     font-size: 15px;
     margin-top: 18px;
 }
 
-footer .footer-left span{
+footer .footer-left span {
     color: blueviolet;
 }
 
-footer .footer-left .footer-social-media{
+footer .footer-left .footer-social-media {
     width: 300px;
     height: 35px;
     margin-top: 20px;
 }
 
-footer .footer-left .footer-social-media h2{
+footer .footer-left .footer-social-media h2 {
     color: rgb(209, 209, 209);
     font-style: italic;
     font-size: 15px;
 }
 
-footer .footer-left .footer-social-media ul li{
+footer .footer-left .footer-social-media ul li {
     display: inline-block;
 }
 
-footer .footer-left .footer-social-media ul li img{
+footer .footer-left .footer-social-media ul li img {
     width: 20px;
     height: 20px;
 }
 
-footer .footer-right{
+footer .footer-right {
     width: 230px;
 }
 
-footer .footer-right h2{
+footer .footer-right h2 {
     color: rgb(209, 209, 209);
     font-style: italic;
     font-size: 18px;
 }
 
-footer .footer-right h3{
+footer .footer-right h3 {
     color: rgb(148, 146, 146);
     font-size: 15px;
     margin-top: 18px;
 }
 
-footer .footer-right p{
+footer .footer-right p {
     color: rgb(148, 146, 146);
     font-size: 15px;
 }
 
-footer .footer-right .footer-right-a{
+footer .footer-right .footer-right-a {
     margin-bottom: 18px;
 }
 
 /**-------------------Page Contacto------------------*/
 
-.banner-contacto{
+.banner-contacto {
     background-image: url(../img/banner-contacto.jpg);
     background-repeat: no-repeat;
     background-position: top;
@@ -418,26 +419,26 @@ footer .footer-right .footer-right-a{
     align-items: flex-end;
 }
 
-.banner-contacto h2{
+.banner-contacto h2 {
     color: blueviolet;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
 }
 
-.banner-contacto h3{
+.banner-contacto h3 {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
 
-.banner-contacto img{
+.banner-contacto img {
     width: 80px;
     height: 80px;
     padding-bottom: 30px;
     margin-top: 30px;
 }
 
-.contacto{
+.contacto {
     background-color: blueviolet;
     width: 100%;
     display: flex;
@@ -448,14 +449,14 @@ footer .footer-right .footer-right-a{
     text-align: center;
 }
 
-.contacto h2{
+.contacto h2 {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
     padding-top: 20px;
 }
 
-.contacto .contacto-social-media{
+.contacto .contacto-social-media {
     width: 100%;
     padding: 20px;
     display: flex;
@@ -465,17 +466,17 @@ footer .footer-right .footer-right-a{
     box-sizing: border-box;
 }
 
-.contacto .contacto-social-media ul li{
+.contacto .contacto-social-media ul li {
     display: inline-block;
 }
 
-.contacto .contacto-social-media ul li img{
+.contacto .contacto-social-media ul li img {
     width: 30px;
     height: 30px;
     margin: 15px;
 }
 
-.contacto .contacto-social-media p{
+.contacto .contacto-social-media p {
     color: whitesmoke;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -483,7 +484,7 @@ footer .footer-right .footer-right-a{
     width: 600px;
 }
 
-.contacto .contacto-form{
+.contacto .contacto-form {
     width: 600px;
     box-sizing: border-box;
     display: flex;
@@ -492,7 +493,7 @@ footer .footer-right .footer-right-a{
     align-items: center;
 }
 
-.contacto .contacto-form input{
+.contacto .contacto-form input {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -500,7 +501,7 @@ footer .footer-right .footer-right-a{
     border: solid 2px rgb(0, 0, 0);
 }
 
-.contacto .contacto-form textarea{
+.contacto .contacto-form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -508,7 +509,7 @@ footer .footer-right .footer-right-a{
     border: solid 2px rgb(0, 0, 0);
 }
 
-.contacto .direcciones{
+.contacto .direcciones {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -519,7 +520,7 @@ footer .footer-right .footer-right-a{
     padding-top: 100px;
 }
 
-.contacto .direcciones p{
+.contacto .direcciones p {
     color: whitesmoke;
     font-size: 25px;
     font-weight: bold;
@@ -527,30 +528,30 @@ footer .footer-right .footer-right-a{
     width: 100%;
 }
 
-.contacto .direcciones iframe{
+.contacto .direcciones iframe {
     margin: 20px;
 }
 
 /**----------------Page Asesorias----------------*/
 
-main .planes-asesorias{
+main .planes-asesorias {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color:white;
+    background-color: white;
     justify-content: space-evenly;
     box-sizing: border-box;
     padding: 50px 0px 70px 0px;
 }
 
-main .planes-asesorias img{
+main .planes-asesorias img {
     width: 300px;
     height: 300px;
     border: 2px solid blueviolet;
     object-fit: cover;
 }
 
-main .planes-asesorias h2{
+main .planes-asesorias h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: blueviolet;
@@ -560,13 +561,13 @@ main .planes-asesorias h2{
     margin-bottom: 30px;
 }
 
-main .planes-asesorias ul li{
+main .planes-asesorias ul li {
     list-style: circle inside;
     font-size: 18px;
     width: 220px;
 }
 
-main .planes-asesorias a{
+main .planes-asesorias a {
     text-decoration: none;
     margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
@@ -578,7 +579,7 @@ main .planes-asesorias a{
     padding: 5px;
 }
 
-main .planes-asesorias .plan-tarjeta{
+main .planes-asesorias .plan-tarjeta {
     width: 300px;
     height: 670px;
     margin: 60px;
@@ -588,14 +589,14 @@ main .planes-asesorias .plan-tarjeta{
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
-    box-shadow: 1px 16px 52px 8px rgba(138,43,226,0.75);
-    -webkit-box-shadow: 1px 16px 52px 8px rgba(138,43,226,0.75);
-    -moz-box-shadow: 1px 16px 52px 8px rgba(138,43,226,0.75);
+    box-shadow: 1px 16px 52px 8px rgba(138, 43, 226, 0.75);
+    -webkit-box-shadow: 1px 16px 52px 8px rgba(138, 43, 226, 0.75);
+    -moz-box-shadow: 1px 16px 52px 8px rgba(138, 43, 226, 0.75);
 }
 
 /**----------------Page Nosotros----------------*/
 
-.banner-nosotros{
+.banner-nosotros {
     background-image: url(../img/banner-nosotros.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -608,20 +609,20 @@ main .planes-asesorias .plan-tarjeta{
     align-items: center;
 }
 
-.banner-nosotros h2{
+.banner-nosotros h2 {
     color: blueviolet;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
 }
 
-.banner-nosotros h3{
+.banner-nosotros h3 {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     padding-bottom: 65px;
 }
 
-.nosotros{
+.nosotros {
     width: 100%;
     background-color: blueviolet;
     color: whitesmoke;
@@ -629,210 +630,360 @@ main .planes-asesorias .plan-tarjeta{
     justify-content: center;
 }
 
-.nosotros div{
+.nosotros div {
     width: 75%;
     text-align: center;
     padding: 100px 0 100px 0;
 }
 
-.nosotros h2{
+.nosotros h2 {
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
 }
 
-.nosotros h3{
+.nosotros h3 {
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
 
-.nosotros h4{
+.nosotros h4 {
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
 
-.nosotros p{
+.nosotros p {
     font-style: italic;
     font-size: 23px;
     margin: 20px 0 35px 0;
 }
 
+/**----------------Page Mi Perfil----------------*/
+
+.banner-perfil{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(5,90px);
+    grid-template-areas:
+        "img-a img-a img-b img-b img-b img-c img-c"
+        "img-a img-a img-b img-b img-b img-c img-c"
+        "img-a img-a img-b img-b img-b img-c img-c"
+        "img-d img-d img-d img-e img-e img-e img-e"
+        "img-d img-d img-d img-e img-e img-e img-e";
+}
+
+.img-a{
+    grid-area: img-a;
+}
+
+.img-b{
+    grid-area: img-b;
+}
+
+.img-c{
+    grid-area: img-c;
+}
+
+.img-d{
+    grid-area: img-d;
+}
+
+.img-e{
+    grid-area: img-e;
+}
+
+.banner-perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.banner-title h2{
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    color: blueviolet;
+    width: 450px;
+}
+
+.banner-title h3{
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: blueviolet;
+    width: 450px;
+}
+
+.logueo{
+    background-color: whitesmoke;
+    padding: 100px 0 100px 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.logueo .logueo-form{
+    width: 80%;
+}
+
+.logueo h2{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.logueo .logueo-email input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+
+.logueo .logueo-pass input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 0 25px 0;
+}
+
+.logueo .logueo-boton input{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.logueo a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+
 /*!--------------MEDIA QUARY-----------*/
 
-@media screen and (max-width:1050px){
-    header nav ul li{
+@media screen and (max-width:1050px) {
+    header nav ul li {
         margin: 0;
     }
-    main .img-galery{
+
+    main .img-galery {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60vh 60vh 60vh;
-        grid-template-areas: 
-        "galery-a"
-        "galery-b"
-        "galery-c"
+        grid-template-areas:
+            "galery-a"
+            "galery-b"
+            "galery-c"
         ;
     }
-    main .banner h2{
+
+    main .banner h2 {
         font-size: 25px;
     }
-    main .banner h3{
+
+    main .banner h3 {
         font-size: 50px;
     }
-    main .banner a{
+
+    main .banner a {
         font-size: 23px;
     }
-    .banner-contacto h2{
+
+    .banner-contacto h2 {
         font-size: 55px;
     }
-    .banner-contacto h3{
+
+    .banner-contacto h3 {
         font-size: 25px;
     }
-    .banner-contacto img{
+
+    .banner-contacto img {
         width: 60px;
         height: 60px;
         margin-top: 20px;
     }
-    .contacto .direcciones{
+
+    .contacto .direcciones {
         flex-direction: column;
         width: 450px;
     }
-    .contacto .direcciones iframe{
+
+    .contacto .direcciones iframe {
         margin: 20px 0 20px 0;
     }
-}   
+}
 
 @media screen and (max-width:750px) {
-    header a{
+    header a {
         font-size: 13px;
     }
-    footer{
+
+    footer {
         height: 400px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-    .footer-left{
+
+    .footer-left {
         margin-bottom: 40px;
     }
-    main .banner h2{
+
+    main .banner h2 {
         font-size: 20px;
     }
-    main .banner h3{
+
+    main .banner h3 {
         font-size: 40px;
     }
-    main .banner a{
+
+    main .banner a {
         font-size: 19px;
     }
-    .banner-contacto h2{
+
+    .banner-contacto h2 {
         font-size: 40px;
     }
-    .banner-contacto h3{
+
+    .banner-contacto h3 {
         font-size: 20px;
     }
-    .banner-contacto img{
+
+    .banner-contacto img {
         width: 45px;
         height: 45px;
         margin-top: 15px;
     }
-    .contacto .contacto-form{
+
+    .contacto .contacto-form {
         width: 450px;
     }
-    .contacto .contacto-social-media{
+
+    .contacto .contacto-social-media {
         width: 450px;
     }
-    .contacto .contacto-social-media h2{
+
+    .contacto .contacto-social-media h2 {
         font-size: 55px;
     }
-    .contacto .contacto-social-media p{
+
+    .contacto .contacto-social-media p {
         font-size: 17px;
         width: 100%
     }
-    .contacto .contacto-social-media ul li img{
+
+    .contacto .contacto-social-media ul li img {
         width: 20px;
         height: 20px;
         margin: 10px;
     }
-}   
+}
 
-@media screen and (max-width:541px){
-    header{
+@media screen and (max-width:541px) {
+    header {
         height: 120px;
     }
-    main .banner h2{
+
+    main .banner h2 {
         font-size: 17px;
     }
-    main .banner h3{
+
+    main .banner h3 {
         font-size: 30px;
     }
-    main .banner a{
+
+    main .banner a {
         font-size: 16px;
     }
-    main .planes .plan-a{
+
+    main .planes .plan-a {
         margin-left: 0;
         margin-right: 0;
     }
-    main .planes .plan-b{
+
+    main .planes .plan-b {
         margin-left: 0;
         margin-right: 0;
     }
-    main .planes .plan-c{
+
+    main .planes .plan-c {
         margin-left: 0;
         margin-right: 0;
     }
-    .banner-contacto h2{
+
+    .banner-contacto h2 {
         font-size: 30px;
     }
-    .banner-contacto h3{
+
+    .banner-contacto h3 {
         font-size: 15px;
     }
-    .banner-contacto img{
+
+    .banner-contacto img {
         width: 40px;
         height: 40px;
     }
-    .contacto .contacto-social-media{
+
+    .contacto .contacto-social-media {
         width: 300px;
     }
-    .contacto .contacto-form{
+
+    .contacto .contacto-form {
         width: 300px;
     }
-    .contacto .direcciones{
+
+    .contacto .direcciones {
         width: 300px;
         padding: 70px 0 70px 0;
     }
-    .contacto .direcciones p{
+
+    .contacto .direcciones p {
         font-size: 20px;
     }
-    .contacto .direcciones iframe{
+
+    .contacto .direcciones iframe {
         width: 300px;
         height: 250px;
     }
 }
 
-@media screen and (max-width:387px){
-    header{
+@media screen and (max-width:387px) {
+    header {
         height: 155px;
     }
-        
+
 }
 
-@media screen and (max-width:350px){
-    main .banner h2{
+@media screen and (max-width:350px) {
+    main .banner h2 {
         font-size: 14px;
     }
-    main .banner a{
+
+    main .banner a {
         font-size: 14px;
     }
-    .banner-contacto h2{
+
+    .banner-contacto h2 {
         font-size: 25px;
     }
-    .banner-contacto h3{
+
+    .banner-contacto h3 {
         font-size: 12px;
     }
-    .banner-contacto img{
+
+    .banner-contacto img {
         width: 35px;
         height: 35px;
         margin-top: 12px;
