@@ -34,6 +34,23 @@ header {
     z-index: 10;
 }
 
+header .navbar {
+    padding: 0;
+}
+
+header .navbar .container-fluid {
+    padding: 0;
+    background-color: black;
+}
+
+header .navbar .container-fluid .collapse .navbar-nav .nav-item{
+    padding: 0;
+}
+
+header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
+    color: whitesmoke;
+}
+
 header a {
     text-decoration: none;
     color: white;
@@ -58,8 +75,8 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 10px;
-    margin: 5px 15px 5px 15px;
+    padding: 8px;
+    margin: 5px 25px 5px 25px;
 }
 
 header nav ul li a{
@@ -823,9 +840,6 @@ main .planes-asesorias .plan-tarjeta {
 /*!--------------MEDIA QUARY-----------*/
 
 @media screen and (max-width:1050px) {
-    header nav ul li {
-        margin: 0;
-    }
 
     main .img-galery {
         display: grid;
@@ -875,9 +889,6 @@ main .planes-asesorias .plan-tarjeta {
 }
 
 @media screen and (max-width:750px) {
-    header a {
-        font-size: 13px;
-    }
 
     footer {
         height: 400px;
@@ -942,9 +953,6 @@ main .planes-asesorias .plan-tarjeta {
 }
 
 @media screen and (max-width:541px) {
-    header {
-        height: 120px;
-    }
 
     main .banner h2 {
         font-size: 17px;
@@ -1007,13 +1015,6 @@ main .planes-asesorias .plan-tarjeta {
         width: 300px;
         height: 250px;
     }
-}
-
-@media screen and (max-width:387px) {
-    header {
-        height: 155px;
-    }
-
 }
 
 @media screen and (max-width:350px) {
