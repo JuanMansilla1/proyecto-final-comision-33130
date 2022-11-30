@@ -397,9 +397,6 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     grid-area: footer;
-}
-
-footer div {
     color: rgb(255, 255, 255);
 }
 
@@ -518,13 +515,6 @@ footer .footer-right .footer-right-a {
     padding-bottom: 50px;
 }
 
-.banner-contacto img {
-    width: 80px;
-    height: 80px;
-    padding-bottom: 30px;
-    margin-top: 30px;
-}
-
 .contacto {
     background-color: blueviolet;
     width: 100%;
@@ -536,7 +526,7 @@ footer .footer-right .footer-right-a {
     text-align: center;
 }
 
-.contacto h2 {
+.contacto .contacto-social-media h2 {
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
@@ -585,6 +575,14 @@ footer .footer-right .footer-right-a {
     align-items: center;
 }
 
+.contacto .contacto-form .nombre{
+    height: auto;
+}
+
+.contacto .contacto-form .email{
+    height: auto;
+}
+
 .contacto .contacto-form input {
     width: 100%;
     box-sizing: border-box;
@@ -593,7 +591,11 @@ footer .footer-right .footer-right-a {
     border: solid 2px rgb(0, 0, 0);
 }
 
-.contacto .contacto-form .boton-enviar:hover {
+.contacto .contacto-form .boton-enviar input{
+    transition: 0.3s;
+}
+
+.contacto .contacto-form .boton-enviar input:hover {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
@@ -744,25 +746,25 @@ main .planes-asesorias .plan-tarjeta {
     padding: 100px 0 100px 0;
 }
 
-.nosotros h2 {
+.nosotros div h2 {
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
 }
 
-.nosotros h3 {
+.nosotros div h3 {
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
 
-.nosotros h4 {
+.nosotros div h4 {
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
 
-.nosotros p {
+.nosotros div p {
     font-style: italic;
     font-size: 23px;
     margin: 20px 0 35px 0;
@@ -770,67 +772,77 @@ main .planes-asesorias .plan-tarjeta {
 
 /**----------------Page Mi Perfil----------------*/
 
-.banner-perfil{
+.mi-perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mi-perfil .banner-perfil{
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    grid-template-rows: repeat(5,90px);
+    grid-template-rows: repeat(5,135px);
     grid-template-areas:
         "img-a img-a img-b img-b img-b img-c img-c"
         "img-a img-a img-b img-b img-b img-c img-c"
         "img-a img-a img-b img-b img-b img-c img-c"
         "img-d img-d img-d img-e img-e img-e img-e"
         "img-d img-d img-d img-e img-e img-e img-e";
+    width: 100%;
 }
 
-.img-a{
+.mi-perfil .banner-perfil .img-a{
     grid-area: img-a;
 }
 
-.img-b{
+.mi-perfil .banner-perfil .img-b{
     grid-area: img-b;
 }
 
-.img-c{
+.mi-perfil .banner-perfil .img-c{
     grid-area: img-c;
 }
 
-.img-d{
+.mi-perfil .banner-perfil .img-d{
     grid-area: img-d;
 }
 
-.img-e{
+.mi-perfil .banner-perfil .img-e{
     grid-area: img-e;
 }
 
-.banner-perfil img{
+.mi-perfil .banner-perfil img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.banner-title{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: whitesmoke;
+.mi-perfil .banner-title{
     text-align: center;
+    position: absolute;
+    top: 480px;
+    left: 35%;
+    text-shadow: -2px -2px 1px rgb(0, 0, 0), 2px 2px 1px rgb(0, 0, 0), -2px 2px 1px rgb(0, 0, 0), 2px -2px 1px rgb(0, 0, 0);
 }
 
-.banner-title h2{
+.mi-perfil .banner-title h2{
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 70px;
     color: blueviolet;
     width: 450px;
+    margin: 0;
 }
 
-.banner-title h3{
+.mi-perfil .banner-title h3{
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
     color: blueviolet;
     width: 450px;
+    margin: 0;
 }
 
 .logueo{
@@ -869,6 +881,13 @@ main .planes-asesorias .plan-tarjeta {
     width: 150px;
     height: 50px;
     margin-top: 20px;
+    transition: 0.3s;
+}
+
+.logueo .logueo-boton input:hover{
+    color: whitesmoke;
+    background-color: rgb(168, 79, 252);
+    border: 2px solid whitesmoke;
 }
 
 .logueo a{

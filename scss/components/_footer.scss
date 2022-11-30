@@ -1,0 +1,83 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-area: footer;
+    color: rgb(255, 255, 255);
+    .footer-left{
+        width: 300px;
+        margin: 0;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            &:hover{
+                color: blueviolet;
+            }
+        }
+        p{
+            color: rgb(148, 146, 146);
+            font-size: 15px;
+            margin: 15px 0 15px 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        span{
+            color: blueviolet;
+        }
+        .footer-social-media{
+            width: 300px;
+            height: 35px;
+            margin-top: 20px;
+            h2{
+                color: rgb(209, 209, 209);
+                font-style: italic;
+                font-size: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 0;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-right{
+        width: 230px;
+        h2{
+            color: rgb(209, 209, 209);
+            font-style: italic;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        h3{
+            color: rgb(148, 146, 146);
+            font-size: 15px;
+            margin-top: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        p{
+            color: rgb(148, 146, 146);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+        }
+        .footer-right-a{
+            margin-bottom: 18px;
+            margin-top: 10px;
+        }
+    }
+}
