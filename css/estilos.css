@@ -72,12 +72,14 @@ main {
     background-position: center;
     width: 100%;
     height: 89vh;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     main .banner h2 {
       color: whitesmoke;
       font-family: 'Poppins', sans-serif;
       font-size: 30px;
-      padding-top: 110px;
       margin: 0;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
     main .banner h3 {
@@ -310,12 +312,14 @@ main {
       color: blueviolet;
       font-family: 'Poppins', sans-serif;
       font-size: 70px;
+      margin: 0;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
     main .banner-nosotros h3 {
       color: whitesmoke;
       font-family: 'Poppins', sans-serif;
       font-size: 30px;
-      padding-bottom: 65px;
+      margin: 0;
+      padding-bottom: 90px;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
   main .nosotros {
     width: 100%;
@@ -343,6 +347,28 @@ main {
         font-style: italic;
         font-size: 23px;
         margin: 20px 0 35px 0; }
+  main .banner-planes {
+    background-image: url(../img/banner-planes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    main .banner-planes div h2 {
+      color: whitesmoke;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
+    main .banner-planes div h3 {
+      color: blueviolet;
+      font-family: 'Poppins', sans-serif;
+      font-size: 60px;
+      text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
   main .planes-asesorias {
     display: flex;
     flex-wrap: wrap;
@@ -399,6 +425,7 @@ main {
     background-image: url(../img/banner-contacto.jpg);
     background-repeat: no-repeat;
     background-position: top;
+    background-color: blueviolet;
     width: 100%;
     height: 89vh;
     text-align: center;
@@ -409,12 +436,14 @@ main {
       color: blueviolet;
       font-family: 'Poppins', sans-serif;
       font-size: 70px;
+      margin: 0;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
     main .banner-contacto h3 {
       color: whitesmoke;
       font-family: 'Poppins', sans-serif;
       font-size: 30px;
-      padding-bottom: 50px;
+      margin: 0;
+      padding-bottom: 90px;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
   main .contacto {
     background-color: blueviolet;
@@ -535,7 +564,7 @@ main {
     main .mi-perfil .banner-perfil {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(5, 135px);
+      grid-template-rows: repeat(5, 17.8vh);
       grid-template-areas: "img-a img-a img-b img-b img-b img-c img-c" "img-a img-a img-b img-b img-b img-c img-c" "img-a img-a img-b img-b img-b img-c img-c" "img-d img-d img-d img-e img-e img-e img-e" "img-d img-d img-d img-e img-e img-e img-e";
       width: 100%; }
       main .mi-perfil .banner-perfil .img-a {
@@ -553,10 +582,14 @@ main {
         height: 100%;
         object-fit: cover; }
     main .mi-perfil .banner-title {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
       position: absolute;
-      top: 480px;
-      left: 35%;
+      top: 65vh;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
       main .mi-perfil .banner-title h2 {
         font-style: italic;
@@ -569,7 +602,7 @@ main {
         font-style: italic;
         font-family: 'Poppins', sans-serif;
         font-size: 35px;
-        color: blueviolet;
+        color: white;
         width: 450px;
         margin: 0; }
   main .logueo {
