@@ -41,19 +41,19 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-decoration: none; }
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic; }
     header a img {
-      height: 56px;
-      margin-right: 20px; }
+      height: 80px;
+      position: absolute;
+      left: 25px; }
     header a:hover {
       color: blueviolet; }
     header a h1 {
-      color: whitesmoke;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 20px;
-      font-style: italic;
       font-size: 35px;
-      margin: 0; }
+      margin: 0 0 0 85px; }
       header a h1 span {
         color: blueviolet; }
   header nav ul {
@@ -718,6 +718,8 @@ footer {
       margin-top: 10px; }
 
 @media screen and (max-width: 1050px) {
+  header a h1 {
+    font-size: 30px; }
   main .img-galery {
     display: grid;
     grid-template-columns: 1fr;
@@ -810,6 +812,11 @@ footer {
     font-size: 25px; } }
 
 @media screen and (max-width: 541px) {
+  header a h1 {
+    font-size: 25px;
+    margin-left: 70px; }
+  header a img {
+    height: 60px; }
   main .banner h2 {
     font-size: 17px; }
   main .banner h3 {
@@ -873,6 +880,8 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 350px) {
+  header a h1 {
+    font-size: 20px; }
   main .banner h2 {
     font-size: 14px; }
   main .banner a {

@@ -1,4 +1,7 @@
 @media screen and (max-width:1050px) {
+    header a h1 {
+        font-size: 30px;
+    }
     main .img-galery {
         display: grid;
         grid-template-columns: 1fr;
@@ -135,6 +138,13 @@
 }
 
 @media screen and (max-width:541px) {
+    header a h1 {
+        font-size: 25px;
+        margin-left: 70px;
+    }
+    header a img {
+        height: 60px;
+    }
     main .banner h2 {
         font-size: 17px;
     }
@@ -225,6 +235,9 @@
 }
 
 @media screen and (max-width:350px) {
+    header a h1 {
+        font-size: 20px;
+    }
     main .banner h2 {
         font-size: 14px;
     }

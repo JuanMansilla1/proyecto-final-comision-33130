@@ -39,20 +39,20 @@ header{
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        color: whitesmoke;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
         img{
-            height: 56px;
-            margin-right: 20px;
+            height: 80px;
+            position: absolute;
+            left: 25px;
         }
         &:hover{
             color: blueviolet;
         }
         h1{
-            color: whitesmoke;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
-            font-style: italic;
             font-size: 35px;
-            margin: 0;
+            margin: 0 0 0 85px;
             span{
                 color: blueviolet;
             }
