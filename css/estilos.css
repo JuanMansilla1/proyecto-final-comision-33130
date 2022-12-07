@@ -98,8 +98,8 @@ main {
       padding: 8px;
       text-shadow: -2px -2px 1px black, 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black; }
       main .banner a:hover {
-        color: blueviolet;
-        background-color: whitesmoke;
+        color: whitesmoke;
+        background-color: blueviolet;
         border: 3px solid blueviolet; }
   main .info {
     display: flex;
@@ -173,12 +173,12 @@ main {
       padding: 0; }
       main .planes ul li {
         list-style: circle inside;
-        font-size: 18px;
+        font-size: 17px;
         font-family: 'Times New Roman', Times, serif;
         width: 220px; }
     main .planes .plan-a {
       width: 300px;
-      height: 630px;
+      height: 650px;
       margin: 40px;
       display: flex;
       flex-direction: column;
@@ -191,7 +191,7 @@ main {
       -moz-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79); }
     main .planes .plan-b {
       width: 300px;
-      height: 630px;
+      height: 650px;
       margin: 40px;
       display: flex;
       flex-direction: column;
@@ -204,7 +204,7 @@ main {
       -moz-box-shadow: -3px 23px 56px -13px rgba(138, 43, 226, 0.79); }
     main .planes .plan-c {
       width: 300px;
-      height: 630px;
+      height: 650px;
       margin: 40px;
       display: flex;
       flex-direction: column;
@@ -596,14 +596,14 @@ main {
         font-family: 'Poppins', sans-serif;
         font-size: 70px;
         color: blueviolet;
-        width: 450px;
+        width: 100%;
         margin: 0; }
       main .mi-perfil .banner-title h3 {
         font-style: italic;
         font-family: 'Poppins', sans-serif;
         font-size: 35px;
         color: white;
-        width: 450px;
+        width: 100%;
         margin: 0; }
   main .logueo {
     background-color: whitesmoke;
@@ -728,7 +728,23 @@ footer {
     flex-direction: column;
     width: 450px; }
   main .contacto .direcciones iframe {
-    margin: 20px 0 20px 0; } }
+    margin: 20px 0 20px 0; }
+  main .banner-nosotros h2 {
+    font-size: 55px; }
+  main .banner-nosotros h3 {
+    font-size: 25px; }
+  main .nosotros div h2 {
+    font-size: 50px; }
+  main .nosotros div h3 {
+    font-size: 25px; }
+  main .nosotros div h4 {
+    font-size: 25px; }
+  main .nosotros div p {
+    font-size: 20px; }
+  main .banner-planes div h2 {
+    font-size: 25px; }
+  main .banner-planes div h3 {
+    font-size: 50px; } }
 
 @media screen and (max-width: 750px) {
   footer {
@@ -762,7 +778,27 @@ footer {
   main .contacto .contacto-social-media ul li img {
     width: 25px;
     height: 25px;
-    margin: 10px; } }
+    margin: 10px; }
+  main .banner-nosotros h2 {
+    font-size: 45px; }
+  main .banner-nosotros h3 {
+    font-size: 23px; }
+  main .nosotros div h2 {
+    font-size: 40px; }
+  main .nosotros div h3 {
+    font-size: 23px; }
+  main .nosotros div h4 {
+    font-size: 23px; }
+  main .nosotros div p {
+    font-size: 17px; }
+  main .banner-planes div h2 {
+    font-size: 20px; }
+  main .banner-planes div h3 {
+    font-size: 40px; }
+  main .mi-perfil .banner-title h2 {
+    font-size: 50px; }
+  main .mi-perfil .banner-title h3 {
+    font-size: 25px; } }
 
 @media screen and (max-width: 541px) {
   main .banner h2 {
@@ -802,7 +838,30 @@ footer {
     font-size: 20px; }
   main .contacto .direcciones iframe {
     width: 300px;
-    height: 250px; } }
+    height: 250px; }
+  main .banner-nosotros h2 {
+    font-size: 30px; }
+  main .banner-nosotros h3 {
+    font-size: 18px; }
+  main .nosotros div h2 {
+    font-size: 30px; }
+  main .nosotros div h3 {
+    font-size: 20px; }
+  main .nosotros div h4 {
+    font-size: 20px; }
+  main .nosotros div p {
+    font-size: 13px; }
+  main .banner-planes div h2 {
+    font-size: 16px; }
+  main .banner-planes div h3 {
+    font-size: 30px; }
+  main .planes-asesorias .plan-tarjeta {
+    margin-left: 0;
+    margin-right: 0; }
+  main .mi-perfil .banner-title h2 {
+    font-size: 40px; }
+  main .mi-perfil .banner-title h3 {
+    font-size: 20px; } }
 
 @media screen and (max-width: 350px) {
   main .banner h2 {
@@ -812,4 +871,20 @@ footer {
   main .banner-contacto h2 {
     font-size: 25px; }
   main .banner-contacto h3 {
-    font-size: 12px; } }
+    font-size: 12px; }
+  main .banner-nosotros h2 {
+    font-size: 25px; }
+  main .banner-nosotros h3 {
+    font-size: 15px; }
+  main .nosotros div h2 {
+    font-size: 25px; }
+  main .nosotros div h3 {
+    font-size: 15px; }
+  main .nosotros div h4 {
+    font-size: 15px; }
+  main .nosotros div p {
+    font-size: 11px; }
+  main .mi-perfil .banner-title h2 {
+    font-size: 35px; }
+  main .mi-perfil .banner-title h3 {
+    font-size: 18px; } }

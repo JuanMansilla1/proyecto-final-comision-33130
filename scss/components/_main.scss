@@ -34,8 +34,8 @@ main{
             padding: 8px;
             text-shadow: -2px -2px 1px rgb(0, 0, 0), 2px 2px 1px rgb(0, 0, 0), -2px 2px 1px rgb(0, 0, 0), 2px -2px 1px rgb(0, 0, 0);
             &:hover{
-                color: blueviolet;
-                background-color: whitesmoke;
+                color: whitesmoke;
+                background-color: blueviolet;
                 border: 3px solid blueviolet;
             }
         }
@@ -121,14 +121,14 @@ main{
             padding: 0;
             li{
                 list-style: circle inside;
-                font-size: 18px;
+                font-size: 17px;
                 font-family: 'Times New Roman', Times, serif;
                 width: 220px;
             }
         }
         .plan-a{
             width: 300px;
-            height: 630px;
+            height: 650px;
             margin: 40px;
             display: flex;
             flex-direction: column;
@@ -142,7 +142,7 @@ main{
         }
         .plan-b{
             width: 300px;
-            height: 630px;
+            height: 650px;
             margin: 40px;
             display: flex;
             flex-direction: column;
@@ -156,7 +156,7 @@ main{
         }
         .plan-c{
             width: 300px;
-            height: 630px;
+            height: 650px;
             margin: 40px;
             display: flex;
             flex-direction: column;
@@ -632,7 +632,7 @@ main{
                 font-family: 'Poppins', sans-serif;
                 font-size: 70px;
                 color: blueviolet;
-                width: 450px;
+                width: 100%;
                 margin: 0;
             }
             h3{
@@ -640,7 +640,7 @@ main{
                 font-family: 'Poppins', sans-serif;
                 font-size: 35px;
                 color: rgb(255, 255, 255);
-                width: 450px;
+                width: 100%;
                 margin: 0;
             }
         }
