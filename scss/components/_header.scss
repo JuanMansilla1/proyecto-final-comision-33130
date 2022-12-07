@@ -34,14 +34,24 @@ header{
     }
     a{
         text-decoration: none;
-        color: white;
-        font-size: 20px;
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        img{
+            height: 56px;
+            margin-right: 20px;
+        }
         &:hover{
             color: blueviolet;
         }
         h1{
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: italic;
+            font-size: 35px;
             margin: 0;
             span{
                 color: blueviolet;

@@ -37,13 +37,22 @@ header {
             color: blueviolet; }
   header a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif; }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; }
+    header a img {
+      height: 56px;
+      margin-right: 20px; }
     header a:hover {
       color: blueviolet; }
     header a h1 {
+      color: whitesmoke;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      font-style: italic;
+      font-size: 35px;
       margin: 0; }
       header a h1 span {
         color: blueviolet; }
