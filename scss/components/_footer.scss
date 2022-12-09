@@ -1,3 +1,4 @@
+@import "../base/variables";
 footer{
     background-color: rgba(0, 0, 0, 0.87);
     width: 100%;
@@ -6,28 +7,28 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     grid-area: footer;
-    color: rgb(255, 255, 255);
+    color: $color-terciario;
     .footer-left{
         width: 300px;
         margin: 0;
         a{
             text-decoration: none;
-            color: white;
-            font-size: 15px;
+            color: $color-terciario;
+            font-size: nth($font-size, 1);
             font-style: italic;
             font-family: 'Times New Roman', Times, serif;
             &:hover{
-                color: blueviolet;
+                color: $color-principal;
             }
         }
         p{
             color: rgb(148, 146, 146);
-            font-size: 15px;
+            font-size: nth($font-size, 1);
             margin: 15px 0 15px 0;
             font-family: 'Times New Roman', Times, serif;
         }
         span{
-            color: blueviolet;
+            color: $color-principal;
         }
         .footer-social-media{
             width: 300px;
@@ -36,7 +37,7 @@ footer{
             h2{
                 color: rgb(209, 209, 209);
                 font-style: italic;
-                font-size: 15px;
+                font-size: nth($font-size, 1);
                 font-family: 'Times New Roman', Times, serif;
                 margin: 0;
             }
@@ -64,14 +65,14 @@ footer{
         }
         h3{
             color: rgb(148, 146, 146);
-            font-size: 15px;
+            font-size: nth($font-size, 1);
             margin-top: 18px;
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
         }
         p{
             color: rgb(148, 146, 146);
-            font-size: 15px;
+            font-size: nth($font-size, 1);
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
         }

@@ -1,5 +1,6 @@
+@import "../base/variables";
 header{
-    background: rgb(0, 0, 0);
+    background: $color-secundario;
     width: 100%;
     padding: 25px;
     position: sticky;
@@ -16,15 +17,15 @@ header{
         padding: 0;
         .container-fluid{
             padding: 0;
-            background-color: black;
+            background-color: $color-secundario;
             .collapse{
                 .navbar-nav{
                     .nav-item{
                         padding: 0;
                         .nav-link{
-                            color: whitesmoke;
+                            color: $color-terciario;
                             &:hover{
-                                color: blueviolet;
+                                color: $color-principal;
                             }
                         }
                     }
@@ -34,12 +35,10 @@ header{
     }
     a{
         text-decoration: none;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @extend %flex;
         text-decoration: none;
-        color: whitesmoke;
+        color: $color-terciario;
         font-family: 'Times New Roman', Times, serif;
         font-style: italic;
         img{
@@ -48,13 +47,13 @@ header{
             left: 25px;
         }
         &:hover{
-            color: blueviolet;
+            color: $color-principal;
         }
         h1{
-            font-size: 35px;
+            font-size: nth($font-size, 4);
             margin: 0 0 0 85px;
             span{
-                color: blueviolet;
+                color: $color-principal;
             }
         }
     }
@@ -69,7 +68,7 @@ header{
                 margin: 5px 25px 5px 25px;
                 a{
                     font-family: 'Times New Roman', Times, serif;
-                    font-size: 20px;
+                    font-size: nth($font-size, 2);
                     font-style: italic;
                 }
             }
