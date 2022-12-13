@@ -15,11 +15,6 @@ header a, main .banner, main .info .info-a, main .info .info-b, main .info .info
   justify-content: center;
   align-items: center; }
 
-header a, main .banner, main .info .info-a, main .info .info-b, main .info .info-c, main .planes-boton, main .img-galery .galery-a, main .img-galery .galery-b, main .img-galery .galery-c, main .nosotros, main .banner-planes, main .contacto, main .contacto .contacto-social-media, main .contacto .contacto-form, main .contacto .contacto-form .nombre, main .contacto .contacto-form .email, main .contacto .contacto-form .dudas, main .contacto .contacto-form .boton-enviar, main .contacto .direcciones, main .mi-perfil, main .mi-perfil .banner-title, main .logueo {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 header {
   background: black;
   width: 100%;
@@ -75,11 +70,6 @@ header {
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
         font-style: italic; }
-
-header a, main .banner, main .info .info-a, main .info .info-b, main .info .info-c, main .planes-boton, main .img-galery .galery-a, main .img-galery .galery-b, main .img-galery .galery-c, main .nosotros, main .banner-planes, main .contacto, main .contacto .contacto-social-media, main .contacto .contacto-form, main .contacto .contacto-form .nombre, main .contacto .contacto-form .email, main .contacto .contacto-form .dudas, main .contacto .contacto-form .boton-enviar, main .contacto .direcciones, main .mi-perfil, main .mi-perfil .banner-title, main .logueo {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 main {
   grid-area: main; }
@@ -501,8 +491,6 @@ main {
           main .contacto .contacto-form .boton-enviar input:hover {
             width: 100%;
             box-sizing: border-box;
-            padding: 10px;
-            margin: 10px 0 10px 0;
             color: whitesmoke;
             background-color: blueviolet;
             border: 2px solid whitesmoke; }
@@ -596,11 +584,6 @@ main {
       main .logueo .logueo-form a {
         text-decoration: none;
         color: blueviolet; }
-
-header a, main .banner, main .info .info-a, main .info .info-b, main .info .info-c, main .planes-boton, main .img-galery .galery-a, main .img-galery .galery-b, main .img-galery .galery-c, main .nosotros, main .banner-planes, main .contacto, main .contacto .contacto-social-media, main .contacto .contacto-form, main .contacto .contacto-form .nombre, main .contacto .contacto-form .email, main .contacto .contacto-form .dudas, main .contacto .contacto-form .boton-enviar, main .contacto .direcciones, main .mi-perfil, main .mi-perfil .banner-title, main .logueo {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 footer {
   background-color: rgba(0, 0, 0, 0.87);

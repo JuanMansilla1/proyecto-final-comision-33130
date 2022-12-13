@@ -1,4 +1,4 @@
-@import "../base/variables";
+// @import "../base/variables";
 main{
     grid-area: main;
     .banner{
@@ -515,8 +515,6 @@ main{
                     &:hover{
                         width: 100%;
                         box-sizing: border-box;
-                        padding: 10px;
-                        margin: 10px 0 10px 0;
                         color: $color-terciario;
                         background-color: $color-principal;
                         border: 2px solid $color-terciario;
