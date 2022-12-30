@@ -10,7 +10,7 @@
   grid-template-rows: 105px auto 300px;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-header a, main .banner, main .info .info-a, main .info .info-b, main .info .info-c, main .planes-boton, main .img-galery .galery-a, main .img-galery .galery-b, main .img-galery .galery-c, main .nosotros, main .banner-planes, main .contacto, main .contacto .contacto-social-media, main .contacto .contacto-form, main .contacto .contacto-form .nombre, main .contacto .contacto-form .email, main .contacto .contacto-form .dudas, main .contacto .contacto-form .boton-enviar, main .contacto .direcciones, main .mi-perfil, main .mi-perfil .banner-title, main .logueo {
+header .logo-inicio a, main .banner, main .info .info-a, main .info .info-b, main .info .info-c, main .planes-boton, main .img-galery .galery-a, main .img-galery .galery-b, main .img-galery .galery-c, main .nosotros, main .banner-planes, main .contacto, main .contacto .contacto-social-media, main .contacto .contacto-form, main .contacto .contacto-form .nombre, main .contacto .contacto-form .email, main .contacto .contacto-form .dudas, main .contacto .contacto-form .boton-enviar, main .contacto .direcciones, main .mi-perfil, main .mi-perfil .banner-title, main .logueo {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -29,47 +29,41 @@ header {
   flex-wrap: wrap;
   grid-area: header;
   z-index: 10; }
-  header .navbar {
+  header .navegacion .navbar {
     padding: 0; }
-    header .navbar .container-fluid {
+    header .navegacion .navbar .container-fluid {
       padding: 0;
       background-color: black; }
-      header .navbar .container-fluid .collapse .navbar-nav .nav-item {
-        padding: 0; }
-        header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-          color: whitesmoke; }
-          header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
-            color: blueviolet; }
-  header a {
-    text-decoration: none;
-    flex-direction: row;
+      header .navegacion .navbar .container-fluid .collapse .navbar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+        header .navegacion .navbar .container-fluid .collapse .navbar-nav .nav-item {
+          padding: 0;
+          margin: 5px 25px 5px 25px; }
+          header .navegacion .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: italic;
+            color: whitesmoke; }
+            header .navegacion .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+              color: blueviolet; }
+  header .logo-inicio a {
     text-decoration: none;
     color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic; }
-    header a img {
+    header .logo-inicio a img {
       height: 80px;
       position: absolute;
       left: 25px; }
-    header a:hover {
+    header .logo-inicio a:hover {
       color: blueviolet; }
-    header a h1 {
+    header .logo-inicio a h1 {
       font-size: 35px;
       margin: 0 0 0 85px; }
-      header a h1 span {
+      header .logo-inicio a h1 span {
         color: blueviolet; }
-  header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    header nav ul li {
-      display: inline-block;
-      padding: 8px;
-      margin: 5px 25px 5px 25px; }
-      header nav ul li a {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        font-style: italic; }
 
 main {
   grid-area: main; }
@@ -654,7 +648,7 @@ footer {
       margin-top: 10px; }
 
 @media screen and (max-width: 1050px) {
-  header a h1 {
+  header .logo-inicio a h1 {
     font-size: 30px; }
   main .img-galery {
     display: grid;
@@ -692,6 +686,18 @@ footer {
     font-size: 25px; }
   main .banner-planes div h3 {
     font-size: 50px; } }
+
+@media screen and (max-width: 991px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px auto 300px;
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  header {
+    flex-direction: column;
+    justify-content: safe; }
+  header .logo-inicio a h1 {
+    margin: 0px 0px 0px 0px; } }
 
 @media screen and (max-width: 750px) {
   footer {
@@ -748,10 +754,10 @@ footer {
     font-size: 25px; } }
 
 @media screen and (max-width: 541px) {
-  header a h1 {
+  header .logo-inicio a h1 {
     font-size: 25px;
-    margin-left: 70px; }
-  header a img {
+    margin-left: 50px; }
+  header .logo-inicio a img {
     height: 60px; }
   main .banner h2 {
     font-size: 17px; }
@@ -816,8 +822,6 @@ footer {
     font-size: 20px; } }
 
 @media screen and (max-width: 350px) {
-  header a h1 {
-    font-size: 20px; }
   main .banner h2 {
     font-size: 14px; }
   main .banner a {

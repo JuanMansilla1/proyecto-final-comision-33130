@@ -1,5 +1,5 @@
 @media screen and (max-width:1050px) {
-    header a h1 {
+    header .logo-inicio a h1 {
         font-size: 30px;
     }
     main .img-galery {
@@ -57,6 +57,25 @@
     }
     main .banner-planes div h3 {
         font-size: 50px;
+    }
+}
+
+@media screen and (max-width:991px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px auto 300px;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+    header{
+        flex-direction: column;
+        justify-content: safe;
+    }
+    header .logo-inicio a h1{
+        margin: 0px 0px 0px 0px;
     }
 }
 
@@ -138,11 +157,11 @@
 }
 
 @media screen and (max-width:541px) {
-    header a h1 {
+    header .logo-inicio a h1 {
         font-size: 25px;
-        margin-left: 70px;
+        margin-left: 50px;
     }
-    header a img {
+    header .logo-inicio a img {
         height: 60px;
     }
     main .banner h2 {
@@ -235,9 +254,6 @@
 }
 
 @media screen and (max-width:350px) {
-    header a h1 {
-        font-size: 20px;
-    }
     main .banner h2 {
         font-size: 14px;
     }
