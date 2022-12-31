@@ -394,6 +394,9 @@ main {
       text-align: center;
       border: 2px solid blueviolet;
       padding: 5px; }
+      main .planes-asesorias a:hover {
+        color: whitesmoke;
+        background-color: blueviolet; }
   main .banner-contacto {
     background-image: url(../img/banner-contacto.jpg);
     background-repeat: no-repeat;

@@ -396,6 +396,10 @@ main{
             text-align: center;
             border: 2px solid $color-principal;
             padding: 5px;
+            &:hover{
+                color: $color-terciario;
+                background-color: $color-principal;
+            }
         }
     }
 
