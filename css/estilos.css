@@ -688,16 +688,16 @@ footer {
     font-size: 50px; } }
 
 @media screen and (max-width: 991px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 90px auto 300px;
-    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   header {
-    flex-direction: column;
-    justify-content: safe; }
-  header .logo-inicio a h1 {
-    margin: 0px 0px 0px 0px; } }
+    align-items: unset;
+    padding: 33px 25px 33px 25px; }
+  header .navegacion .navbar .container-fluid .collapse .navbar-nav .nav-item {
+    width: 90px;
+    margin: 5px; }
+  header .navegacion .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    width: 90px;
+    margin: 0;
+    padding: 5px; } }
 
 @media screen and (max-width: 750px) {
   footer {
@@ -754,6 +754,8 @@ footer {
     font-size: 25px; } }
 
 @media screen and (max-width: 541px) {
+  header .navegacion .navbar .container-fluid {
+    width: 100px; }
   header .logo-inicio a h1 {
     font-size: 25px;
     margin-left: 50px; }
